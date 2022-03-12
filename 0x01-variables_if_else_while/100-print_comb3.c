@@ -11,28 +11,26 @@
 
 int main(void)
 {
-	int numb;
-	int num = 0;
-
-	while (num < 10)
+	while (number2 < 10)
 	{
-		numb = 0;
-		while (numb < 10)
+		number1 = 0;
+		while (number1 < 10)
 		{
-			if (num != numb && num < numb)
+			if (number2 != number1 && number2 < number1)
 			{
-				putchar('0' + num);
-				putchar('0' + numb);
+				putchar('0' + number2);
+				putchar('0' + number1);
 
-				if (numb + numb != 17)
+				if (number1 + number2 != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			numb++;
+
+			number1++;
 		}
-		num++;
+		number2++;
 	}
 	putchar('\n');
 	return (0);
