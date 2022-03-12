@@ -11,6 +11,9 @@
 
 int main(void)
 {
+	int number1;
+	int number2 = 0;
+
 	while (number2 < 10)
 	{
 		number1 = 0;
