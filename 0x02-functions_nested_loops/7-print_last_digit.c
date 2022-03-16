@@ -8,7 +8,7 @@
  * Return: Always 0 (Success)
  */
 
-int print_last_digit(int c);
+int print_last_digit(int c)
 {
 	lastDigit = c % 10;
 
