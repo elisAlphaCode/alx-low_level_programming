@@ -14,7 +14,7 @@ int main(void)
 
 	while (num != 1)
 	{
-		while (num % 1 == 0)
+		while (num % i == 0)
 		{
 			if (i > max)
 				max = i;
