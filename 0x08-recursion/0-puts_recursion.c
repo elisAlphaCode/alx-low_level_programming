@@ -8,7 +8,7 @@
 
 void _puts_rescursion(char *s)
 {
-	if (*s == '\0')
+	if (*s != '\0')
 	{
 		_putchar(*(s + 0));
 		_puts_rescursion((s + 1));
