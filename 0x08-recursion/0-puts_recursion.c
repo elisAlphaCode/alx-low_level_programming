@@ -10,11 +10,12 @@ void _puts_rescursion(char *s)
 {
 	if (*s == '\0')
 	{
-		_putchar('\n');
+		_putchar(*(s + 0));
+		_puts_rescursion((s + 1));
 	}
 	else
 	{
-		_putchar(*s);
-		_puts_rescursion(s + 1);
+		_putchar('\n');
+		return;
 	}
 }
