@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 	if (argc > 1)
 	{
-		for (i = 1; i < argv[i]; i++)
+		for (i = 1;argv[i]; i++)
 		{
 			num = strtol(argv[i], &p, 10);
 			if (!*p)
