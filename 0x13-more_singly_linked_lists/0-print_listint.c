@@ -2,13 +2,14 @@
 #include <stdio.h>
 
 /**
- * print_listint - print all the elements of a linkedlists
+ * print_listint - print elements of linkedlist
  * @h: head
- * Return: length of the string
+ * Return: length of a string
  */
+
 size_t print_listint(const listint_t *h)
 {
-	size_t index_nodes = 0;
+	size_t no_nodes = 0;
 
 	const listint_t *currentv = h;
 
@@ -16,7 +17,7 @@ size_t print_listint(const listint_t *h)
 	{
 		printf("%i\n", currentv->n);
 		currentv = currentv->next;
-		index_nodes++;
+		no_nodes++;
 	}
-	return (index_nodes);
+	return (no_nodes);
 }
